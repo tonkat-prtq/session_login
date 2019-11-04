@@ -1,0 +1,10 @@
+h1 ブログの新規投稿
+
+= form_with model: @blog, local: true do |f|
+  .form-group
+    = f.label :title
+    = f.text_field :title, class: 'form-control', id: 'blog_title'
+  .form-group
+    = f.label :content
+    = f.text_field :content, class: 'form-control', id: 'blog_content'
+  = f.submit
