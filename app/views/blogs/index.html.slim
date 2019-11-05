@@ -12,6 +12,6 @@ table.table.table-hover
       tr
         td= link_to blog.title, blog
         td= blog.content
-        td= @user.name
+        td= blog.user.name
         td= link_to 'ブログを編集する', edit_blog_path(blog.id)
         td= link_to 'ブログを削除する', blog_path(blog.id), method: :delete, data: {confirm: '本当に削除していいですか'}
