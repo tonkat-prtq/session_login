@@ -1,6 +1,6 @@
 class ImageUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
-   # MiniMagickをincludeすると画像サイズ調整ができるようになる
+  # MiniMagickをincludeすると画像サイズ調整ができるようになる
   storage :file # 保存形式の設定。他に使うものとしてはfog形式などがある。
 
   process :resize_to_limit => [50, 50] # 画像サイズの調整
